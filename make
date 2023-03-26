@@ -512,7 +512,7 @@ make_image() {
 
     # Set OpenWrt filename
     [[ -d "${out_path}" ]] || mkdir -p ${out_path}
-    build_image_file="${out_path}/openwrt${source_codename}_${PLATFORM}_${board}_k${kernel}_$(date +"%Y.%m.%d").img"
+    build_image_file="${out_path}/Helmiwrt${source_codename}_${PLATFORM}_${board}_k${kernel}_$(date +"%Y.%m.%d").img"
     rm -f ${build_image_file}
 
     IMG_SIZE="$((skip_mb + boot_mb + root_mb))"
